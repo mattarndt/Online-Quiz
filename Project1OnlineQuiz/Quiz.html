@@ -1,0 +1,181 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Matt Arndt - Project 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+    <form method="post" action="QuizResults.aspx" id="form1">
+        <div class="container-fluid">
+            <!--header-->
+            <div class="intro">
+                <h1>Welcome to the Eagles quiz</h1>
+                <h4>Enter your name, TUID, and select your answers to see your score!</h4>
+                <div class="form-group row centered">
+                    <div class="col-xs-3">
+                        <input class="form-control" type="text" id="name" name="name" placeholder="Enter your name">
+                    </div>
+                    <div class="col-xs-3">
+                        <input class="form-control" type="text" id="tuid" name="tuid" placeholder="Enter your TUID">
+                    </div>
+                </div>
+            </div>
+            <hr />
+        </div>
+
+        <div class="container-fluid">
+            <!--questions start-->
+            <div class="questions">
+                <!--free response-->
+                <label>What year did the eagles win the Suberbowl?</label>
+                <input class="form-control" type="text" id="q1" name="q1">
+
+                <label>How many players on an active NFL roster</label>
+                <input class="form-control" type="text" id="q2" name="q2">
+
+                <label>What number was Donavan McNabb?</label>
+                <input class="form-control" type="text" id="q3" name="q3">
+
+                <label>Which Eagles player was most recently inducted into the Hall of Fame?</label>
+                <input class="form-control" type="text" id="q4" name="q4">
+
+                <label>How many touchdowns did Carson Wentz throw in the 2017-2018 season?</label>
+                <input class="form-control" type="text" id="q5" name="q5">
+                <!--radio buttons-->
+                <label>What number is Fletcher Cox?</label><br />
+                <label class="radio-inline">
+                    <input type="radio" name="q6" id="q6_1" value="91">91
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="q6" id="q6_2" value="76">76
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="q6" id="q6_3" value="87">87
+                </label> <br /> <br />
+
+                <label>Who is the General Manager?</label><br />
+                <label class="radio-inline">
+                    <input type="radio" name="q7" id="q7_1" value="Doug Pederson">Doug Pederson
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="q7" id="q7_2" value="Jim Schwartz">Jim Schwartz
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="q7" id="q7_3" value="Howie Roseman">Howie Roseman
+                </label><br /> <br />
+
+                <label>What college did Carson Wentz go to?</label><br />
+                <label class="radio-inline">
+                    <input type="radio" name="q8" id="q8_1" value="North Dakota State">North Dakota State
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="q8" id="q8_2" value="UCLA">UCLA
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="q8" id="q8_3" value="Temple University">Temple University
+                </label><br /> <br />
+
+                <label>What is Andy Reid's current nickname</label><br />
+                <label class="radio-inline">
+                    <input type="radio" name="q9" id="q9_1" value="The Refrigerator">The Refrigerator
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="q9" id="q9_2" value="Earthquake">Earthquake
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="q9" id="q9_3" value="Big Red">Big Red
+                </label><br /> <br />
+
+                <label>Who threw the touchdown pass to Nick Foles in Superbowl 52?</label><br />
+                <label class="radio-inline">
+                    <input type="radio" name="q10" id="q10_1" value="Corey Clement">Corey Clement
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="q10" id="q10_2" value="Trey Burton">Trey Burton
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="q10" id="q10_3" value="Alshon Jeffery">Alshon Jeffery
+                </label><br /> <br />
+                <!--dropdown-->
+                <div class="form-group">
+                    <label class="control-label" for="q11">What is the name of the stadium that the Eagles play in?</label>
+                    <select id="q11" class="form-control" name="q11">
+                        <option>-Select-</option>
+                        <option>Wells Fargo Center</option>
+                        <option>Lincoln Financial Field</option>
+                        <option>Citizens Bank Park</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="q12">Who is the all time rushing yard leader for the Eagles?</label>
+                    <select id="q12" class="form-control" name="q12">
+                        <option>-Select-</option>
+                        <option>Brian Westbrook</option>
+                        <option>Wilbert Montgomery</option>
+                        <option>LeSean McCoy</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="q13">Who is the all time passing yard leader for the Eagles?</label>
+                    <select id="q13" class="form-control" name="q13">
+                        <option>-Select-</option>
+                        <option>Donovan McNabb</option>
+                        <option>Ron Jaworski</option>
+                        <option>Randall Cunningham</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="q14">Who is Brian Dawkins' alter ego</label>
+                    <select id="q14" class="form-control" name="q14">
+                        <option>-Select-</option>
+                        <option>Weapon X</option>
+                        <option>Batman</option>
+                        <option>Incredible Hulk</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="q15">Who is the play-by-play announcer for the Eagles on 94.1</label>
+                    <select id="q15" class="form-control" name="q15">
+                        <option>-Select-</option>
+                        <option>Ron Jaworski</option>
+                        <option>Merril Reese</option>
+                        <option>Mike Quick</option>
+                    </select>
+                </div>
+                <!--free response-->
+                <label>What year did Nick Foles first arrive in Philly?</label>
+                <input class="form-control" type="text" id="q16" name="q16">
+
+                <label>What year did Andy Reid get hired?</label>
+                <input class="form-control" type="text" id="q17" name="q17">
+
+                <label>Which number Superbowl did Donovan McNabb play in?</label>
+                <input class="form-control" type="text" id="q18" name="q18">
+
+                <label>What is the most disgusting team in the NFL?</label>
+                <input class="form-control" type="text" id="q19" name="q19">
+
+                <label>What is Doug Pederson's signature clothing item?</label>
+                <input class="form-control" type="text" id="q20" name="q20">
+
+
+            </div>
+            <button type="button" class="btn btn-primary" onclick="ValidateForm()">Submit</button><br /><br /><br />
+        </div>
+
+        
+    </form>
+
+</body>
+</html>

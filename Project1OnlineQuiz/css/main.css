@@ -1,0 +1,42 @@
+﻿.intro{
+    text-align:center;
+}
+.intro h1{
+    padding-top:10px;
+}
+.intro row{
+    width: 50%;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+button{
+    margin:20px;
+}
+hr{
+    border-top: 2px solid black;
+}
+.questions {
+    width: 45%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+.questions input{
+    margin-bottom: 15px;
+}
+
+.wrong{
+    color: red;
+}
+
+.right{
+    color: green;
+}
+
